@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+	<html>
+		<head> 
+			<style>
+				body { text-align : center } input {margin-top: 5px} select {margin-top: 5px}
+			</style>
+		</head>
+	<body text-align="center">
+		<h1 id="heading"> Create a Password </h1>
+		<p> {{err}} </p>
+		<form method='get'>
+			<p> Minimum Word Length  {{ form.minWl }}
+			Maximum Word Length {{ form.maxWl }}
+			Maximum Password Length {{ form.maxPswd }} </p>
+			<br>
+			<br>
+			<p> Substitutions </p>
+			<br>
+			<p>  e = 3? {{ form.e }} o = 0? {{ form.o }}
+			l = 1? {{ form.l }} </p>
+			<br>
+			<br>
+			<p> Capitalization </p>
+			<br>
+			<p> 1st Word? {{ form.firstWord }} 
+			2nd Word? {{ form.secondWord }} 
+			3rd Word? {{ form.thirdWord }}
+			4th Word? {{ form.fourthWord }} </p>
+			<br>
+			<br>
+			<p> Optimize for Typing Speed? {{ form.optimization }} </p>
+			<br>
+			<input type='submit'/>
+		</form>
+	</body>
+</html>
